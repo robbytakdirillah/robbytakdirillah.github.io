@@ -42,7 +42,7 @@ background-repeat:no-repeat
    
    <!-- Tombol Kirim Pesan -->
    <div id="contTom"><a id="By" class='button' onClick="sjawab()">
-      <b>💌 Klik ini dong syg</b>
+      <b>💌 Klik ini dong Eci syg</b>
    </a></div>
    
    </div>
@@ -83,7 +83,7 @@ background-repeat:no-repeat
        async function menuju(){await swals.fire('Kirim pesan ke WhatsApp aku, ya!');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
        async function jawab(){
            var { value: jawaban } = await swals.fire({
-               title: 'Ketik Pesan Kamu &#128073;&#128072;', 
+               title: 'Ketik Pesan WA Kamu &#128073;&#128072;', 
                input: 'text', allowOutsideClick: false, showCancelButton: false,
            });
            if(jawaban && jawaban.length < 21){
@@ -91,7 +91,7 @@ background-repeat:no-repeat
                pesanwhatsapp = jawaban;
                finalakhir();
            } else {
-               await swals.fire('Ups!', 'Jawaban tidak boleh kosong atau lebih dari 20 karakter, ya!');jawab();
+               await swals.fire('Ups!', 'Pesan WA tidak boleh kosong ya sayang atau lebih dari 20 karakter, ya!');jawab();
            }
        }
 
