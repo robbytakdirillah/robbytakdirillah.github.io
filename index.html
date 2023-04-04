@@ -29,6 +29,7 @@
     <link href="css/app.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/galeri.css">
     <!-- <link rel="icon" href="favicon.ico"> -->
 </head>
 
@@ -444,6 +445,48 @@
 
                         </div>
                     </div>
+                                        <!-- Galeri Foto -->
+                    <div class="content pembates-margin">
+                        <img src="img/content-top.svg" style="width:100%" alt="">
+                        <div class="content-data ">
+                            <span class="akad-nikah signature-font gs_reveal gs_reveal_fromRight" style="padding-top: 3rem">
+                                Galeri Foto
+                             </span>
+                            <div class="block-detail">
+                                <!-- The expanding image container -->
+                                <div class="container">
+                                    <!-- Close the image -->
+                                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                  
+                                    <!-- Expanded image -->
+                                    <img id="expandedImg" style="width:100%">
+                                  </div>
+                                <div style="overflow-x:auto;">
+                                    <table>
+                                        <tr>
+                                            <td><img src="img/HD/WeddingRobbyYessy23.jpg" class="gs_reveal w-100" alt="Love" onclick="myFunction(this);"></td>
+                                            <td><img src="img/HD/WeddingRobbyYessy20.jpg"class="gs_reveal w-100" alt="Love" onclick="myFunction(this);"></td>
+                                            <td><img src="img/HD/WeddingRobbyYessy22.jpg"class="gs_reveal w-100" alt="Love" onclick="myFunction(this);"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="img/HD/WeddingRobbyYessy1.jpg"class="gs_reveal w-100" alt="Love" onclick="myFunction(this);"></td>
+                                            <td><img src="img/HD/WeddingRobbyYessy2.jpg"class="gs_reveal w-100" alt="Love" onclick="myFunction(this);"></td>
+                                            <td><img src="img/HD/WeddingRobbyYessy24.jpg"class="gs_reveal w-100" alt="Love" onclick="myFunction(this);"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="img/HD/WeddingRobbyYessy7.jpg"class="gs_reveal w-100" alt="Love" onclick="myFunction(this);"></td>
+                                            <td><img src="img/HD/WeddingRobbyYessy4.jpg"class="gs_reveal w-100" alt="Love" onclick="myFunction(this);"></td>
+                                            <td><img src="img/HD/WeddingRobbyYessy14.jpg"class="gs_reveal w-100" alt="Love" onclick="myFunction(this);"></td>
+                                        </tr>
+                                    </table>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="end-content">
+                        <img src="img/content-top.svg" style="width:100%" alt="">
+                    </div>
+                    <!-- End Galeri Foto -->
                     <div class="last-img w-100 gs_reveal">
                         <img src="img/img-wedding.svg" alt="">
                     </div>
@@ -550,6 +593,18 @@
         var tamu2 = GetURLParameter('tamu2');
         document.getElementById("tamu").innerHTML = tamu;
         document.getElementById("tamu2").innerHTML = tamu2;
+    </script>
+    <script>
+        function myFunction(imgs) {
+        // Get the expanded image
+        var expandImg = document.getElementById("expandedImg");
+        // Get the image text
+        var imgText = document.getElementById("imgtext");
+        // Use the same src in the expanded image as the image being clicked on from the grid
+        expandImg.src = imgs.src;
+        // Show the container element (hidden with CSS)
+        expandImg.parentElement.style.display = "block";
+        }
     </script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
